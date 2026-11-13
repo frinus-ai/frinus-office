@@ -86,7 +86,7 @@ jobs:
           tar -czf "frinus-office-${{ matrix.target }}.tar.gz" -C "$stage" .
           ls -lh "frinus-office-${{ matrix.target }}.tar.gz"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: frinus-office-${{ matrix.target }}
           path: frinus-office-${{ matrix.target }}.tar.gz
